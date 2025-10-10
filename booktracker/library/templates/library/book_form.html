@@ -1,0 +1,22 @@
+<!-- library/templates/library/book_form.html -->
+{% extends 'library/base.html' %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group">
+        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {{ field }}
+        {% if field.errors %}
+        <div style="color: #e74c3c; font-size: 0.9rem;">
+            {{ field.errors }}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+    <button type="submit" class="btn">Save</button>
+    <a href="{% url 'book_list' %}" class="btn btn-danger">Cancel</a>
+</form>
+{% endblock %}

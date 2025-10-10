@@ -1,0 +1,31 @@
+<!-- library/templates/library/book_list.html -->
+{% extends 'library/base.html' %}
+
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+    <h1>My Book Collection</h1>
+    <a href="{% url 'add_book' %}" class="btn btn-success">Add New Book</a>
+</div>
+
+<div class="book-list">
+    {% for book in books %}
+    <div class="book-card status-{{ book.status }}">
+        <h3>{{ book.title }}</h3>
+        <p><strong>Author:</strong> {{ book.author }}</p>
+        {% if book.isbn %}
+        <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+        {% endif %}
+        <p><strong>Status:</strong> {{ book.get_status_display }}</p>
+        <p><strong>Added:</strong> {{ book.date_added|date:"M d, Y" }}</p>
+        <div style="margin-top: 1rem;">
+            <a href="{% url 'edit_book' book.id %}" class="btn">Edit</a>
+            <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+    {% empty %}
+    <div class="book-card">
+        <p>No books in your collection yet. <a href="{% url 'add_book' %}">Add your first book!</a></p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
