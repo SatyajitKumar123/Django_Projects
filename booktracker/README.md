@@ -16,10 +16,10 @@ A simple and elegant Django web application to manage your personal book collect
 ## Screenshots
 
 ### Main Book Collection View
-![Main Collection](booktracker/images/Screenshot1.png)
+![Main Collection](images/Screenshot1.png)
 
 ### Add/Edit Book Form
-![Add Book Form](booktracker/images/Screenshot2.png)
+![Add Book Form](images/Screenshot2.png)
 
 ## Technology Stack
 
