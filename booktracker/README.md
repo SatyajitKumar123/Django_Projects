@@ -1,6 +1,6 @@
 # BookTracker - Personal Book Collection Manager
 
-![BookTracker Screenshot](https//images/Screenshot1.png)
+![BookTracker Screenshot](booktracker/images/Screenshot1.png)
 
 A simple and elegant Django web application to manage your personal book collection. Track your reading progress, add new books, and organize your literary journey.
 
@@ -16,10 +16,10 @@ A simple and elegant Django web application to manage your personal book collect
 ## Screenshots
 
 ### Main Book Collection View
-![Main Collection](https//images/Screenshot1.png)
+![Main Collection](booktracker/images/Screenshot1.png)
 
 ### Add/Edit Book Form
-![Add Book Form](https//images/Screenshot2.png)
+![Add Book Form](booktracker/images/Screenshot2.png)
 
 ## Technology Stack
 
