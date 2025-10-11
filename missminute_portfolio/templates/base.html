@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Miss Minutes' Dev Portfolio{% endblock %}</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#hero" %}" class="logo">
+                    <img src="{% static 'images/missminute1.png' %}" alt="Miss Minutes Logo" class="miss-minutes-icon">
+                    <span>Miss Minutes Dev</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock  %}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{ year }} Miss Minutes' Dev Portfolio. All Rights Reserved. For All Time. Always.</p>
+        </div>
+    </footer>
+    <script src="{% static "js/script.js" %}"></script>
+</body>
+</html>

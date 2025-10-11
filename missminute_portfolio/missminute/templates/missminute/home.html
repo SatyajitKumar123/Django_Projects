@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Miss Minutes' Dev Portfolio{% endblock %}
+
+{% block content %}
+
+<section id="hero" class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <img src="{% static 'images/missminute1.png' %}" alt="Miss Minutes Avatar" class="hero-avatar">
+            <div class="hero-text">
+                <h1>Howdy, Y'all! I'm Satyajit Temporal!</h1>
+                <h2>Your Friendly Neighborhood Django Developer!</h2>
+                <p>I'm a Python Django enthusiast, ready to fix your timelines and build robust web applications. Let's make some glorious purpose!</p>
+                <a href="#projects" class="btn">View My Glorious Projects!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About This Variant Developer</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Well, howdy! I'm Satyajit Kumar, a passionate Python Django developer with a knack for crafting elegant and efficient web solutions. Just like the TVA keeps the Sacred Timeline in order, I ensure my code is clean, well-structured, and performs flawlessly.</p>
+                <p>My journey into the world of web development started with a curiosity for how things work, and it quickly evolved into a love for bringing ideas to life with code. I specialize in Django, REST APIs, database design, and I'm always eager to learn new technologies to expand my capabilities.</p>
+                <p>I believe in creating user-friendly experiences and writing maintainable code that stands the test of time (and potential timeline branches!). When I'm not coding, you might find me exploring new tech, contributing to open-source, or perhaps even pondering the mysteries of the multiverse. Let's chat and see how I can help you achieve your glorious purpose!</p>
+            </div>
+            <div class="about-image">
+                <img src="{% static 'images/missminute_pointing.png' %}" alt="Miss Minutes pointing">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>My Toolkit for Keeping the Timeline Stable</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon"></i>
+                <h3>Python</h3>
+                <p>My primary language for backend development.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Django</h3>
+                <p>Building powerful web applications with this amazing framework.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3>Databases</h3>
+                <p>PostgreSQL, MySQL, SQLite - designing and managing data.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server skill-icon"></i>
+                <h3>REST APIs</h3>
+                <p>Crafting robust and scalable API endpoints.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>HTML5</h3>
+                <p>Structuring the web's content.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <h3>CSS3</h3>
+                <p>Styling and responsive design to keep things pretty.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square skill-icon"></i>
+                <h3>JavaScript</h3>
+                <p>Adding interactivity and dynamic content.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt skill-icon"></i>
+                <h3>Git/GitHub</h3>
+                <p>Version control and collaborative development.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>My Glorious Purpose Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="Gemini_Generated_Image_3m1rxa3m1rxa3m1r.png" alt="TVA Web App" class="project-image">
+                <h3>TVA Workflow Management</h3>
+                <p>A Django web application to manage TVA agent assignments and timeline anomaly reports.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn-small">Live Demo</a>
+                    <a href="#" target="_blank" class="btn-small">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Gemini_Generated_Image_3m1rxa3m1rxa3m1r.png" alt="Nexus Event Detector" class="project-image">
+                <h3>Nexus Event Detector API</h3>
+                <p>A Django REST API that identifies potential nexus events based on input data and predicts timeline branches.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn-small">Live Demo</a>
+                    <a href="#" target="_blank" class="btn-small">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Gemini_Generated_Image_3m1rxa3m1rxa3m1r.png" alt="Timeline Pruning System" class="project-image">
+                <h3>Timeline Pruning System Dashboard</h3>
+                <p>A front-end dashboard (with a Django backend) for visualizing and initiating timeline pruning operations.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn-small">Live Demo</a>
+                    <a href="#" target="_blank" class="btn-small">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Let's Get You on the Sacred Timeline!</h2>
+        <div class="contact-content">
+            <p>Got a project idea that needs a Django expert? Or just want to chat about the intricacies of temporal mechanics? Don't be a variant, reach out!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <p>Or find me here:</p>
+                <a href="https://github.com/SatyajitKumar123" target="_blank" rel="noopener noreferrer" class="external-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
