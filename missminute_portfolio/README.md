@@ -1,6 +1,6 @@
 Here's a comprehensive README.md for your MissMinute Django portfolio project:
 
-```markdown
+
 # ⏰ MissMinute Portfolio - Django Edition
 
 A fully responsive, time-themed portfolio website built with Django featuring interactive elements and modern CSS design.
