@@ -1,5 +1,9 @@
 # Django-specific files
+<<<<<<< HEAD
 *.log 
+=======
+*.log
+>>>>>>> master
 *.pot
 *.pyc
 __pycache__/
@@ -11,6 +15,7 @@ db.sqlite3
 venv/
 env/
 
+<<<<<<< HEAD
 # PyCharm-specific files
 .idea/
 
@@ -20,3 +25,16 @@ Thumbs.db
 .coverage
 .tox/
 .eggs/
+=======
+# IDE-specific files (e.g., PyCharm)
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Other common files
+.coverage
+.tox/
+.eggs/.venv/
+>>>>>>> master
