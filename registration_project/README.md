@@ -1,6 +1,6 @@
 # Django Registration Form Project
 
-![Django Registration Demo](registerForm.gif)
+![Django RegistrationForm Demo](registerForm.gif)
 
 A complete Django web application demonstrating user registration, authentication, and profile management with Bootstrap 5 styling.
 
