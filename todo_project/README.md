@@ -1,6 +1,6 @@
 # 📝 Django To-Do List Application
 
-
+![Django Todo List Demo](todo_demo.gif)
 
 A simple and beginner-friendly Django web application that allows users to **add**, **edit**, **delete**, and **mark tasks as completed**. The UI is built using **Bootstrap** to provide a clean and responsive design.
 
